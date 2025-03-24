@@ -6,34 +6,25 @@
 
 ## 📁 Структура проекта
 
-CHATBOT_DR.HOUSE_V... ├── assets/ # Аватары для чата (пользователь и доктор Хаус) │ ├── Dr. House.png │ └── user.jpg │ ├── data/ # CSV-файлы с вопросами и ответами │ ├── questions_answers.csv # Исходный датасет │ └── questions_answers_new.csv # Обновлённая версия (после доработки) │ ├── models_inferences/ # Инференс и сравнение моделей │ ├── inference_gradio.ipynb # Интерфейс с Gradio │ └── inferences_(models_comparison).ipynb # Сравнение моделей и генерация ответов │ ├── models_training/ # Скрипты для обучения │ ├── data_preparing.ipynb # Подготовка данных │ ├── train_openlm_research_open_llama_3b_v2.ipynb # Дообучение open_llama │ ├── train_unsloth_Llama_3_2_1B.ipynb # Обучение модели unsloth (LoRA + SFT) │ └── train_unsloth_Llama-3.2-1B-lora_chat_template.ipynb # Обучение с chat_template │ ├── reports/ # (Папка для финальных отчётов и метрик) │ ├── venv/ # Виртуальное окружение (в .gitignore) │ ├── requirements.txt # Список зависимостей └── README.md # Этот файл
-
----
-
-## **Project Structure**
 chatbot_dr.house_v.2.0/ 
-│── 📂 data/ # Dataset storage │ 
-│   ├── questions_answers.csv # Raw dataset (House's quotes and responses)
-│   ├── questions_answers.npy # Processed dataset (for training)
-│
-│── 📂 models/                # Model training
-│   ├── train.ipynb           # Notebook for LLM fine-tuning with LoRA
-│   ├── config.yaml           # Configuration file for training
-│   ├── tokenizer.json        # Tokenizer file
-│
-│── 📂 api/                   # Web service (FastAPI)
-│   ├── app.py               # FastAPI server implementat
-│   ├── requirements.txt      # Python dependencies
-│   ├── Dockerfile            # Containerization for Google Cloud Run
-│
-│── 📂 deploy/                # Deployment scripts
-│   ├── deploy.sh             # Automated deployment script
-│   ├── cloudbuild.yaml       # Google Cloud Build configuration
-│
-│── README.md                 # Project documentation
-│── .gitignore                # Ignored files (models, logs, cache)
----
-
+├── assets/ # Аватары для чата (пользователь и доктор Хаус) 
+│ ├── Dr. House.png 
+│ └── user.jpg 
+│ ├── data/ # CSV-файлы с вопросами и ответами 
+│ ├── questions_answers.csv # Исходный датасет 
+│ └── questions_answers_new.csv # Обновлённая версия (после доработки) 
+│ ├── models_inferences/ # Инференс и сравнение моделей 
+│ ├── inference_gradio.ipynb # Интерфейс с Gradio 
+│ └── inferences_(models_comparison).ipynb # Сравнение моделей и генерация ответов
+│ ├── models_training/ # Скрипты для обучения 
+│ ├── data_preparing.ipynb # Подготовка данных 
+├── train_openlm_research_open_llama_3b_v2.ipynb # Дообучение open_llama 
+│ ├── train_unsloth_Llama_3_2_1B.ipynb # Обучение модели unsloth (LoRA + SFT)
+│ └── train_unsloth_Llama-3.2-1B-lora_chat_template.ipynb # Обучение с chat_template 
+│ ├── reports/ # (Папка для финальных отчётов и метрик) 
+│ ├── venv/ # Виртуальное окружение (в .gitignore) 
+├── requirements.txt # Список зависимостей 
+└── README.md # Этот файл
 
 ---
 
